@@ -1,0 +1,129 @@
+{
+  "reviewer_comment": "R1-22",
+  "status": "PUBLICATION_CANDIDATE_NOT_YET_PUBLIC",
+  "training_performed": false,
+  "benchmark": "FAA-SDR-AP-3Y",
+  "synthetic_generator_included": true,
+  "synthetic_results_audited": false,
+  "faa": {
+    "raw_directory": "data/faa_sdr/raw",
+    "original_years": [
+      2024,
+      2025,
+      2026
+    ],
+    "original_sha256": {
+      "SDR-2024.csv": "35a499853b4b41ee5a205bb18e194ca9aa41bb1e932c54e41073f87b69fa120f",
+      "SDR-2025.csv": "cf28af4bd42309d7e7c6b128dd54970fb48cee46781e9da0cbe57e175d081e79",
+      "SDR-2026.csv": "0b3fb6c88714d3a1790c5bc1570efd6fb57e8666ab3cc58b3d5edcb902e3a85b"
+    },
+    "raw_hashes_found_in_manifest": {
+      "SDR-2024.csv": true,
+      "SDR-2025.csv": true,
+      "SDR-2026.csv": true
+    },
+    "processed_sha256": {
+      "split_manifest.json": "c215400920fb3950d55ee5abba8f6351740c0460eec5e5d06a2f7f7733692e54",
+      "train_interactions.csv": "ca730146ae6c639ef000b719ba7afdf4b67b7af5f53873ccbcbbd559e2a944e7",
+      "val_interactions.csv": "06f783021f160582060b7b550a71ce5df7da97784d5b4827ad279d6a44739fd8",
+      "test_interactions.csv": "f5b812c8d00ade4257f72415e9182c0e7cb3b93714175c2a90b6ecb7eefd8355"
+    },
+    "processed_sha256_matches_reference": true,
+    "rows": {
+      "train": 52092,
+      "val": 6530,
+      "test": 6483
+    },
+    "date_ranges_if_columns_available": {},
+    "chronology_independently_checked": false,
+    "raw_replay_performed": false
+  },
+  "test_evidence": {
+    "faa_sdr_ap_3y": {
+      "runs": 60,
+      "identical_candidates": true,
+      "candidate_sha256": "77dbb2be198b15df0ca6dd41c2025e172411fc00aaf32083044be713ec71b5e5",
+      "candidate_counts": [
+        11312,
+        5656,
+        5656
+      ]
+    }
+  },
+  "source_sha256": {
+    "data/synthetic/export_gephi.py": "ab2ba9af2144f69dcc9c25739a111a9db7c1554cf51ad0c90ca103397de6f78a",
+    "data/synthetic/generator.py": "c7e43b80e1affae2ef1b58767e2475003ac98acb946ab889999c3f2a3e4e7377",
+    "data/synthetic/generator_easy_project5.py": "18bafb914fa7ffa513aa3f5b416c778ceca96e787df4e85d0d5ed797a327b3f8",
+    "experiments/faa_sdr/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "experiments/faa_sdr/audit.py": "2c4ac1535794d2e921045f39ea97744790cd06d8940246a29664ac6f2b608e3b",
+    "experiments/faa_sdr/candidates.py": "8343fc3b6a6705b24ae724ee22b1a100b1b2a3a3500e5b4663d6393bc4d3bfdd",
+    "experiments/faa_sdr/jobs.py": "84cf532ca024eae932fc5cee1b7ab06fe39bd3ef961ebcd8740b481e01b2e3ee",
+    "experiments/faa_sdr/prepare.py": "69a7e94996908d9806594ae9c130905a4f49343ee72a862832fdbb12c3ef2f8e",
+    "experiments/synthetic/analyze_results.py": "12741968fdbfdf24c24dec59ddcfdbab41f39f04532402b315532cd480c0f783",
+    "experiments/synthetic/paper_tables.py": "cec2e4493de232930d210bbbed1d69a78bb1ab5a83d9f38edf29fc5ad455fe03",
+    "experiments/synthetic/run_experiments.py": "19ad22ee4fceac3135276201844b00cf06fafce4164872914ae00486c4e884f3",
+    "experiments/synthetic/train_wbtbgrl.py": "8e4587e1fa3f97d12a2f339041939dff22d8171835f22c727978ba4a1b748bce",
+    "revised/audit_bisbm_v2.py": "e3eacdfb8514d31567ab3a8d237429eb81b92838055d88cfd5e2c38def9acf72",
+    "revised/audit_protocol_v2.py": "b95094330b3ac01442868b296164814e6b154483e8a63e0e85e927408116f2e7",
+    "revised/auditoria_capas_gnn_easy.py": "0183085dad3f3108084444774a00c02615c211322e9c14bbecf5a3e9444eaee5",
+    "revised/auditoria_decoders_easy.py": "cd97c120f72cfec84314f070eb4712f19c1d0322b85a138d5d25be2c6cf05176",
+    "revised/batch.py": "9b6bf715d202fcaa05b2e72f4a91770e9ac37c5d0d6228d002765b9e1ac0f2ea",
+    "revised/data.py": "a06cd260c1f5f7299bcf7663a05f695e2c631ed484eb2cb555d07a033d9d626e",
+    "revised/diagnostico_etapas_easy.py": "39de615060dcb3aee7d57c7d59245eae17f9a6be7b2d2c7afcbe96adeca24b6a",
+    "revised/easy_analysis.py": "2152bb2ee85e8d6f8c4e63d98360115704017241a5fcc5ae398a5559ea57b367",
+    "revised/easy_generator_loader.py": "785610fe39dfc1e046389444af85b447ac2cf62d61b1993b67f7ee40361053c9",
+    "revised/easy_negatives.py": "8fefb872203b267d3165c24d37f9fa66ee2fd2b73488d582afa095eb9693bbba",
+    "revised/easy_sweep.py": "229bba33019e93065636444483cc36b3b25ca7f8025a281bf5464d42e4eea4df",
+    "revised/faa_data.py": "0177230045af9a7e5d413f655a3e4ab9525fbab3dd373efd4c1dab070dc28041",
+    "revised/faa_features.py": "acc4811f46104a5c6032061a0cdd21d54a1e6a82cda100033bd4990a94c8dc7a",
+    "revised/faa_sampling.py": "4368a44cca2357dc3898dd435969ccbd8729d1fe98f0b5319a9a43084e75b686",
+    "revised/inductive_protocol.py": "8ade50e9d34e543f7e042b5516646f215499b17655b5ee5d7e9ba3955e9774e7",
+    "revised/negative_sampling.py": "10707e74e03bd48c691846f9e3ea0fa2ce46d79c6fbadab22258a01ff27517ea",
+    "revised/p_sensitivity.py": "02fe7c192c2ed69eff4c276a75887f575af118e0f9436b3a1aa4acb588db14d5",
+    "revised/p_sensitivity_analysis.py": "6bb76fc145051e90cff592349a2529f1ea339a4d427d02c1e576d802b314e7f1",
+    "revised/p_sensitivity_run.py": "afa8d119c1487dca90a2b703cae496429a04020292a2d7f81254e55ad9ace760",
+    "revised/paired_analysis.py": "678ce2d71888893f81d4ebd1e385c3180216f405deca874521853ef13d308d99",
+    "revised/pas_ablation.py": "4fef3ca9085f0a40ec40d3b4c8572d903a3a935c71bb5acf4bf85c978e697e2f",
+    "revised/pas_analysis.py": "162ec9fcf2b3848561edee1029764cf02c2908c57c38a2fe8deb84ba4b754035",
+    "revised/results.py": "dcd053c559955ce1afd5e3c5f8c135e1cb73fe3f7c82144c7c33e4b83672e556",
+    "revised/run.py": "678cec9db978286ef2faa969602fe7f7b16dc291c4f3740d1ab804f0765717c1",
+    "revised/run_easy.py": "6ded91381ffbd1939c4cd3accdac69969f8a637addb0b6f7afcc457fe73a0217",
+    "revised/ssl_bisbm_analisis.py": "da6b28bea5406e200dcd3a431ab722848a6921afa07884fb6a70f96d9f9542af",
+    "revised/ssl_bisbm_original.py": "b4756c928efbf81c15b2fd8f67d7faad62306a09af24e8f59fc9bb346ebfb1c6",
+    "revised/ssl_factorial_analysis.py": "1f629374377e7ccf73280daa049feeb3e36125b2b4e46bde3eafa67ff5dbfaa3",
+    "revised/ssl_factorial_easy.py": "77cd57023257ec3efc8d509f47ae5113ef6653591ded8a8f1a253193205d11db",
+    "revised/ssl_industry_analisis.py": "f0d56f12696bfb4e0436ab5b8b21f7596b3dae80f759bcb8df6e84282cdf2930",
+    "revised/ssl_industry_p5.py": "6076e94d833ba0ff534c7b05a70376cd3d2d54432bf915cb8962a30e161526b0",
+    "revised/ssl_multigrafo_analisis.py": "a1fc2790d29b24c74a674ff9af6dad19a060a011f127079023d7df6f24e1251a",
+    "revised/ssl_multigrafo_easy.py": "7d1f29732e968b0edf7b5f9eb8ea6d7dd9c7cd21740c3d15f67dd4e2acfae141",
+    "revised/sweep.py": "2abe79ecbab13e0639c28edac653183654b8a105ecff804c4887c8cb51256a1e",
+    "src/data/__init__.py": "acb96f3fafa6dd7d8c3a1a7c73c484e935dd0d06c20a98aa83300d248ec7087c",
+    "src/data/bipartite_loader.py": "e551e81c358be18f1f24e503788123ce67f653987647b154f99fb0e34a915bf9",
+    "src/data/dataset.py": "9b2046f0bd826930ff294351d01954aeb425d9502263b0e56acc9e78475d94d7",
+    "src/data/ecommerce_inductive_loader.py": "7ddb24b12cc637d3fb92d2441c506134e1baf37b51628d278c5f8fcfd54b3bc5",
+    "src/data/eurocontrol_inductive_loader.py": "0064a0fe0ec60a2f0bf7f1a3bb43f1dbb8bb634f053be310e9f5ec6d1a73325d",
+    "src/data/industry_inductive_loader.py": "8cad55961938b880a7e9427bd009d47ce5c89bda06742b95b3226d57f36cf067",
+    "src/data/splits.py": "84c6b09808024398ec3fbfe9d14aee211442428116e2935b1544778f38b1eed0",
+    "src/data/synthetic_loader.py": "e1a1224cbff067f58a21892be208cd3a86257ba81feae0a6cad01e2d3326d51d",
+    "src/evaluation/__init__.py": "26011e4dd825e7b20665e31279d6302a4ad43c4ec5c3c664340dd0609e7ee167",
+    "src/evaluation/decoder.py": "bc16b0bde69010dba46b8d10799dac7f1309ace0faef697d4a80c7d6bb3a203b",
+    "src/evaluation/evaluator.py": "9a977f8c066df6a28ed0ddb46c2817c8be3090bafdeaee10bafbd657ce1a7dc0",
+    "src/models/__init__.py": "9d7d17cc821883b5cf89ee645f57527c219f93bfc36ee4dd9c213e061d512341",
+    "src/models/base.py": "7621af679231c01098bd1abdf1151acc71fb2b09bd5c0cca729c33f00320093a",
+    "src/models/bgrl.py": "9121ed830b5ea7dcb07b64d050124576b8e0d5739aeafcfe64d4888666b21bbe",
+    "src/models/cca_ssg.py": "3de684b2ed16a13d15ad96178a222e281ea5cf0353b810fab3c8a7b0d23e9d98",
+    "src/models/gbt.py": "807591898c6a1937073c81eade0e033e6bdbdd9fc48734fefb1b3f3db6e183ae",
+    "src/models/graph_contract.py": "fbdfd9d723c05e68a45a033e22d5c8bb63afb5e59ac6085a35cecbc14a3bbeda",
+    "src/models/tbgrl.py": "b4afb5d2a065490c0bf64e00574941f1b59a91cd0992e92e5d42e9662d0f331c",
+    "src/models/wbtbgrl.py": "30e6d3a0f5ce639339ba8de825c2cd94ad110367bbd53b1d7c67a2f432280ffa",
+    "src/utils/__init__.py": "dca70a07b7918c0bfaf6dd12add888aadeb3dbfe9a6def344854bceed905d59a",
+    "src/utils/config.py": "b3047178327ae26f73d20fd0fd8482e394e8753fca95a556d3d05dfc69a86961",
+    "src/utils/metrics.py": "aee8c38e6eb51c55f47f91609356b0d66b03b8e88ba1858b09ba3d8b29e082f7",
+    "src/utils/visualization.py": "2a6ec2394008355b2e08d4df5c7602c72052d194590e78aed85001b2114a1157"
+  },
+  "processed_faa_included": true,
+  "industry_included": false,
+  "warnings": [
+    "Processed CSV dates were not independently verified; inspect split_manifest.json and prior audit."
+  ]
+}

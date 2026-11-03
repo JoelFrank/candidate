@@ -1,0 +1,11 @@
+{
+  "python": "3.12.16",
+  "package_versions": {
+    "numpy": "1.26.4",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.1",
+    "torch": "2.5.1+cu124",
+    "torch-geometric": "2.8.1"
+  }
+}
