@@ -1,0 +1,11 @@
+{
+  "count": 43241,
+  "mean": 1.204689993293402,
+  "median": 1.0,
+  "p90": 2.0,
+  "p99": 5.0,
+  "maximum": 20,
+  "fraction_weight_1": 0.8806919358941745,
+  "sum_weights": 52092,
+  "source": "distinct OperatorControlNumber exclusively in train"
+}
